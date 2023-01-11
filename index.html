@@ -22,55 +22,42 @@
  <!--https://freefrontend.com/css-water-effects/-->
  <!--https://www.greenseas.org/?gclid=CjwKCAiAk--dBhABEiwAchIwkcJsTXjiqEt_vB2VLUaR8qyM4L0Yg4L5FidXfxIeJQ1u3F_6M5zbaRoCAQwQAvD_BwE-->
  <!------https://nicepage.com/templates/preview/whale-watching-center-12805?device=desktop-->
-    <title>Ngo - Water Aid</title>
-    <style>
-        /* Image grid*/
-.img-row{
-    height: 300px;
-}
-* {
-  box-sizing: border-box; 
+ <!--https://codepen.io/littlesnippets/pen/zvRgNN-->
  
-}
+ <title>Ngo - Water Aid</title>
+    <style>
 
-body {
-  margin: 0; 
-  font-weight: 500;
-  font-family: 'HelveticaNeue';
-}
-
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        /* Image grid*/
 section {
   width: 100%;
   padding: 0 7%;
   display: table;
   margin: 0;
-  max-width: none;
   background-color: #42a1c6;
-  height: 80vh;
+  height: 60vh;
   }
   section:nth-of-type(2n) {
     background-color: #ffffff;
   }
 
 .intro {
-  height: 60vh;
+  height: 50vh;
 }
 
-.content {
-  display: table-cell;
-  vertical-align: middle;
-}
+
 
 h1 {
   font-size: 3em;
-  display: block;
   color:  #42a1c6;
-;
   font-weight: 300;
 }
 h2 {
   font-size: 40px;
-  display: block;
   color:  #C3CAD9;
 ;
 text-align: center;
@@ -81,14 +68,15 @@ p {
   font-weight: 500;
   color: #C3CAD9;
 }
-
-
-
+.content {
+  margin-top: 20px;
+  padding-top: 20px;
+}
 
 footer {
   padding: 1% 5%;
   text-align:center;
-  background-color: #373B44;
+  background-color: #42a1c6;;
   color: white;}
   
 
@@ -179,9 +167,153 @@ footer {
 }
  @keyframes up {
   100% {
-    transform: translateY(-800px);
+    transform: translateY(-600px);
   }
 }
+/* fish*/
+
+.fish {
+  width: 150px;
+  height: 100px;
+  animation: swim 8s infinite; 
+}
+
+.fish-body {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 250px; 
+  height: 100px;
+}
+
+.eye {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 60%;
+  width: 20px;
+  height: 20px;
+}
+
+.pupil {
+  position: absolute;
+  z-index: 2;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.fin {
+  margin-top: -100px; 
+  background-color: orange;
+  border-radius: 50%;
+  transform: rotate(40deg);
+  width: 80px;
+  height: 50px;
+}
+
+.fin-bottom{
+  margin-top: -10px;
+  transform: rotate(-40deg);
+}
+/* */
+.fish2 {
+  width: 150px;
+  height: 100px;
+  animation: swim2 3s infinite; 
+}
+
+.fish-body2 {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 20px;
+  background-color: rgb(0, 89, 255);
+  border-radius: 50%;
+  width: 250px; 
+  height: 100px;
+}
+
+.eye2 {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 60%;
+  width: 20px;
+  height: 20px;
+}
+
+.pupil2 {
+  position: absolute;
+  z-index: 2;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.fin2 {
+  margin-top: -100px; 
+  background-color: rgb(0, 89, 255);
+  border-radius: 50%;
+  transform: rotate(40deg);
+  width: 80px;
+  height: 50px;
+}
+
+.fin-bottom2 {
+  margin-top: -10px;
+  transform: rotate(-40deg);
+}
+
+/* Swim Animation */
+@keyframes swim {
+  0% {
+    transform: translateY(50px) translateX(0) rotate(30deg);
+  }
+  25% { 
+    transform: translateY(50px) translateX(250px) rotate(20deg);
+  }
+  50% {
+    transform: translateY(100px) translateX(500px);
+  }
+  75% {
+    transform: translateY(50px) translateX(850px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(-170px) translateX(1200px) rotate(-40deg);
+  }
+}
+
+@keyframes swim2 {
+  0% {
+    transform: translateY(50px) translateX(20px) rotate(-30deg);
+  }
+  25% { 
+    transform: translateY(-50px) translateX(120px) rotate(20deg);
+  }
+  50% {
+    transform: translateY(100px) translateX(700px);
+  }
+  75% {
+    transform: translateY(50px) translateX(850px) rotate(20deg);
+  }
+  100% {
+    transform: translateY(170px) translateX(1800px) rotate(20deg);
+  }
+}
+
+
 /* image logo*/
 .img-logo{
   width: 100%;
@@ -194,12 +326,94 @@ text-align: left;
 .star-c {
   color: #42a1c6;;
 }
+.test {
+  padding-top: 20px;
+}
+/* testimonal*/
+figure.test-1 {
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none
+
+}
+figure.test-1 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.test-1 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
+}
+figure.test-1 blockquote {
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 25px 50px 30px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.test-1 blockquote:before,
+figure.test-1 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.test-1 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.test-1 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.test-1 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fafafa;
+  margin: 0;
+  position: absolute;
+}
+
+figure.test-1 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+
+}
+figure.test-1 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
     </style>
-</head>
-    
+</head> 
  <body>
-    <div class="position-relative overflow-hidden p-3 m-md-3 text-center ">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
+  <div class="container">
+    <div class="row">
+      <div class=" p-3  text-center ">
+        <div class="col-lg-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 fw-normal">GreenSea <br>Trust </h1>
           <p class="lead fw-normal">
             The aim of GreenSeas Trust is to educate, promote and implement environmental programmes to eliminate plastics entering the seas and coastal areas.<br> Our goal is to ensure marine life and fish stocks are sustainable for future generations.</p>
@@ -208,42 +422,69 @@ text-align: left;
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
       </div>
-    <section class="intro ">  
-        <div class="content">
-        
-    <div class="container" >
-      <div class="row">
-        <div class="col-md-4 p-2"><h2>
-          A marine <br>conservation charity</h2></div>
-        <div class="col-md-4 p-2 "><img src="https://www.greenseas.org/wp-content/uploads/brizy/imgs/GS-logo-216x112x0x0x216x112x1640172159.png" alt="logo" class=" img-logo img-fluid"/></div>
-        <div class="col-md-4 p-2"><h2>
-         stopping plastics entering <br> the seas</h2></div>
-      </div>
-        <div class="bubbles bubble-1"></div>
-        <div class="bubbles bubble-5"></div>
-        <div class="bubbles bubble-2"></div>
-        <div class="bubbles bubble-6"></div>
-        <div class="bubbles bubble-3"></div>
-        <div class="bubbles bubble-7"></div>
-        <div class="bubbles bubble-4"></div>
-        <div class="bubbles bubble-8"></div>
-        <div class="bubbles bubble-9"></div>
-        <div class="bubbles bubble-10"></div>
-        <div class="bubbles bubble-11"></div>
-        <div class="bubbles bubble-12"></div>
-        <div class="bubbles bubble-13"></div>
-        <div class="bubbles bubble-14"></div>
-        <div class="bubbles bubble-15"></div>
     </div>
+  </div>
+ 
+      <section >  
+        <div class="intro content">
+          <div class="  text-center"> 
+          <!-------------->
+            <div class="fish">
+              <div class="fish-body">
+                <div class="eye">
+                  <div class="pupil"></div>
+                </div>
+              </div>
+              <div class="fin"></div>
+              <div class="fin fin-bottom"></div>
+            </div>
+
+            <div class="fish2">
+              <div class="fish-body2">
+                <div class="eye2">
+                  <div class="pupil2"></div>
+                </div>
+              </div>
+              <div class="fin2"></div>
+              <div class="fin2 fin-bottom2"></div>
+            </div>
+            <!---------------->
+            
+                 
+             
+            <div class="bubbles bubble-1"></div>
+            <div class="bubbles bubble-5"></div>
+            <div class="bubbles bubble-2"></div>
+            <div class="bubbles bubble-6"></div>
+            <div class="bubbles bubble-3"></div>
+            <div class="bubbles bubble-7"></div>
+            <div class="bubbles bubble-4"></div>
+            <div class="bubbles bubble-8"></div>
+            <div class="bubbles bubble-9"></div>
+            <div class="bubbles bubble-10"></div>
+            <div class="bubbles bubble-11"></div>
+            <div class="bubbles bubble-12"></div>
+            <div class="bubbles bubble-13"></div>
+            <div class="bubbles bubble-14"></div>
+            <div class="bubbles bubble-15"></div>
+        </div>
+       
+         <!-------<div class="col-lg-4 p-2"><h2>
+                  A marine <br>conservation charity</h2></div>
+                <div class="col-lg-4 p-2 "><img src="https://www.greenseas.org/wp-content/uploads/brizy/imgs/GS-logo-216x112x0x0x216x112x1640172159.png" alt="logo" class=" img-logo img-fluid"/></div>
+                <div class="col-lg-4 p-2"><h2>
+                 stopping plastics entering <br> the seas</h2></div>-->
+
        </div>
       </section>
       
-      <section>  
+
+    
+
       
+      <section> 
         <div class="content text-center">
           <div class="container">
-                <div class="row">
-                  <div class="col-md-8 offset-md-2 border">
                     <div class="row">
                       <div class="col-md">
                         <h1>The Problem</h1>
@@ -304,50 +545,105 @@ text-align: left;
 
                       </div>
                     </div>
-                   
               
-                  </div>
-                </div>
+               
               </div>
-       
        </div>
-      </section>
-      
+      </section> 
       <section>  
         <div class="content">
-            
+    
          <!-------Images grid-->
- <div class="container p-2 text-center">
+ <div class="container p-2 mt-2 text-center">
     <div class="row img-row">
-      <div class="col-sm-8 border ">col-sm-8</div>
-      <div class="col-sm-4 border">col-sm-4</div>
+      <div class="col-lg-8 border ">col-sm-8</div>
+      <div class="col-lg-4 border">col-sm-4</div>
     </div>
     <div class="row img-row">
-      <div class="col-sm border">col-sm</div>
-      <div class="col-sm border">col-sm</div>
-      <div class="col-sm border">col-sm</div>
+      <div class="col-lg border">col-sm</div>
+      <div class="col-lg border">col-sm</div>
+      <div class="col-lg border">col-sm</div>
     </div>
     <div class="row img-row">
-         <div class="col-sm-4 border">col-sm-4</div>
-        <div class="col-sm-8 border ">col-sm-8</div>
+         <div class="col-lg-4 border">col-sm-4</div>
+        <div class="col-lg-8 border ">col-sm-8</div>
       </div>
        </div>
       </section>
       
       <section>  
-        <h1 class="test ">Testimonals</h1>
-        <div class="content text-center">
-          <h1>See the <a href="http://caniuse.com/#feat=viewport-units">browser support.</a></h1>
-       </div>
-      </section>
-      
-      <footer>
-        Made by <a href="https://www.twitter.com/ckor">Zahra Olanrewaju</a>
-      </footer>
-      
+        <div class="container">
+          <div class="text-center">
+            <h1 class="test ">Testimonals</h1>
+         </div>
+          <div class="row">
+            <div class="col">
+              <figure class="test-1">
+                <blockquote>
+              <p>    "The positive visual image the BinForGreenSeas displays, helps to encourage visitors to the beach to dispose of their litter responsibly."</p>
+      <div class="arrow"></div>
+                </blockquote>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sq-sample3" />
+                <div class="author">
+                 <h5>Ian Arnell <span>Seafront Officer</span></h5> 
+                </div>
+              </figure>
+            </div>
+            <!----->
+            <div class="col">
+              <figure class="test-1">
+                <blockquote>
+              <p>   “Canary Wharf has recovered on average, over 60kgs per month of PET bottles from going to Waste to Energy. Instead, we are sending them down our recycling stream.” </p>
+      <div class="arrow"></div>
+                </blockquote>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sq-sample3" />
+                <div class="author">
+                 <h5>David Brown <span>General Manager</span></h5> 
+                </div>
+              </figure>
+            </div>
+            <!------->
+            <div class="col">
+              <figure class="test-1">
+                <blockquote>
+              <p>   
+                “The bin is eye catching with a strong environmental message. It is a talking point along the seafront, with residents and holiday makers.”</p>
+      <div class="arrow"></div>
+                </blockquote>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sq-sample3" />
+                <div class="author">
+                 <h5>Dan Clocks <span>SOperation Manager</span></h5> 
+                </div>
+              </figure>
+            </div>
+             <!------->
+             <div class="col">
+              <figure class="test-1">
+                <blockquote>
+              <p>   
+                “We  have emptied the BinForGreenSeas nearly 100 times and collected over half a tonne of waste which could otherwise have been left on the beach.”</p>
+      <div class="arrow"></div>
+                </blockquote>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sq-sample3" />
+                <div class="author">
+                 <h5>Harry Briggs <span>Environmental Enforcer</span></h5> 
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+       
 
-    <!------------->
+        <!------------------------------------->
+      
+      </section>
     
+      <footer>
+        Made by <a href="https://github.com/zahrabola/Ngo-Lp">Zahra Olanrewaju</a>
+      </footer>
+
+
+
 
    
    
